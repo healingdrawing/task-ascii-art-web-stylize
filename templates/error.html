@@ -1,0 +1,25 @@
+{{template "header"}}
+
+<main>
+
+<div class="container">
+    <div class="err">
+        {{.ErrorNum}}
+    </div>
+</div>
+<div class="container">
+    <div class="goBack">
+        <div class="errText">
+            {{.ErrorText}}
+        </div>
+        <form action="/">
+            <div>
+                <input type="submit" class="buttonGoBack" value="GO BACK"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+</main>
+
+{{template "footer"}}

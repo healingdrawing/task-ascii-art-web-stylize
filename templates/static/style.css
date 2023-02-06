@@ -1,0 +1,174 @@
+@font-face {
+  font-family: buttonFont;
+  src: url(Raleway-Thin.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-repeat: no-repeat !important;
+  background-attachment: fixed !important;
+}
+
+h1{
+  padding:50px;
+  color:rgba(70, 82, 88, 0.74); 
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  font-size: 6ch;
+}
+
+div{
+  text-align: center;
+  padding:5px;
+}
+
+.button{
+  background-color: #f4511e;
+  border: none;
+  color: hsl(34, 100%, 97%);
+  padding: 5px 160px;
+  text-align: center;
+  font-family:"buttonFont" ,'Times New Roman', Georgia, Times, serif;
+  font-size: 24px;
+  margin-top: 30px;
+  opacity: 0.7;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button:hover {opacity: 1}
+
+.buttonGoBack{
+  background-color: #f4511e;
+  border: none;
+  color: white;
+  padding: 10px 70px;
+  text-align: center;
+  font-family:'Gill Sans', Calibri, 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  margin: 4px 2px;
+  opacity: 0.7;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  filter: drop-shadow(0 0 20px #f4511e) contrast(2) brightness(2);
+}
+
+.buttonGoBack:hover {opacity: 1}
+
+.output{
+  top:0%;
+  padding-left:10%;
+  padding-right:10%;
+  padding-top:550px;
+}
+
+.warning{
+  color:rgba(70, 82, 88, 0.74); 
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  font-size: 6ch;
+  text-align:left;
+  padding-top: 20px;
+}
+
+.neonText{
+  color: rgb(255, 13, 0);
+  text-align:left;
+  text-shadow:
+    0 0 7px rgb(223, 159, 109),
+    0 0 10px rgb(248, 122, 26),
+    0 0 21px rgb(249, 169, 107),
+    0 0 42px rgb(255, 111, 0),
+    0 0 82px rgb(255, 111, 0),
+    0 0 92px rgb(255, 111, 0),
+    0 0 102px rgb(246, 154, 84),
+    0 0 200px rgb(250, 198, 168);
+}
+
+#grad1{
+  height: 100%;
+  background-image: linear-gradient(rgb(217, 200, 175),rgb(203, 143, 104),rgb(49, 58, 64),rgb(23, 29, 32), rgb(8, 11, 15)); 
+}
+
+.gui{
+  position: fixed;
+  top:0;
+  left:0;
+  right: 0;
+  margin:auto;
+}
+
+div.err{
+  color: rgba(92, 107, 114, 0.445);
+  font-family: 'Times New Roman', Georgia, Times, serif; 
+  font-size:50vw;
+  text-align: center;
+}
+
+div.errText{
+  color: rgba(175, 126, 94, 0.639);
+  font-family: Georgia, 'Times New Roman', Times, serif; 
+  font-size: 4em; 
+  text-align: center;
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  width:100%;
+  height:100%;
+  position:absolute;
+}
+
+textarea{
+  background-color: transparent;
+  color:rgb(45, 59, 67);
+  min-width: 480px;
+  max-width: 700px;
+  width:80%;
+  height:4em;
+  font-size: 3ch;
+}
+
+textarea:focus {
+  outline: none !important;
+  border:1px solid rgba(83, 121, 142, 0.74); /*border color when clicked inside */
+}
+
+textarea::placeholder{
+  color: rgba(77, 88, 95, 0.665); /* text color of placeholder */
+}
+
+input[type=radio]{
+  display:none;
+}
+input[type=radio] + label{
+  margin:10px;
+  font-size: 2ch;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: rgb(32, 44, 49);
+  font: #f4511e;
+  background-color: rgba(0, 75, 121, 0.093);
+  filter: drop-shadow(0 0 2px #8e9caf6a) contrast(1) brightness(1);
+  border-radius: 5px;
+  display: inline-table;
+  width: 200px !important;
+  height: 20px !important;
+  cursor:pointer;
+}
+input[type=radio]:checked + label{
+  color: rgba(63, 82, 90, 0.899);
+  background-color: #df4a1c2c;
+  filter: drop-shadow(0 0 10px #f4501ecf) contrast(2) brightness(2);
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color: rgba(63, 82, 90, 0.641);
+}

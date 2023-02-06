@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="/static/style.css">
+  <title>ASCII-ART-WEB</title>
+</head>
+
+<body id="grad1">
+<div class="output">
+  <div class="neonText">
+      <pre>{{.Output}}</pre>
+  </div>
+  <div class="warning">
+    <pre>{{.Warning}}</pre>
+  </div>
+</div>
+<div class="gui">
+  <h1>Welcome to ASCII art generator</h1>
+  <form method="POST" action="/ascii-art">
+    <div>
+      <textarea required name="input" placeholder="Type something here and choose the font below"></textarea>
+    </div>
+    <div>
+      <input id="r1" value="standard" name="banner" type="radio" checked><label for="r1">standard</label>
+      <input id="r2" value="shadow" name="banner" type="radio"><label for="r2">shadow</label>
+      <input id="r3" value="thinkertoy" name="banner" type="radio"><label for="r3">thinkertoy</label>
+    </div>
+    <div>
+      <input type="submit" class="button" value="convert"/>
+    </div>
+  </form>
+</div> 
+</body>
+
+</html>
